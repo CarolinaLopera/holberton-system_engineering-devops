@@ -1,0 +1,1 @@
+Proyect shell, permissions star
