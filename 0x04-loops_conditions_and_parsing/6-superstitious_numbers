@@ -1,18 +1,13 @@
 #!/usr/bin/env bash
-# This scritp print 'Best School' with while and if
+# This scritp print numbers of 1 to 20 with some exeptions
 i=1
-four=4
-eigth=8
-while [ $i -lt 11 ]
+while [ $i -lt 21 ]
 do
-  if [ $i -eq $four ]
-  then
-	echo "bad luck"
-  elif [ $i -eq $eigth ]
-  then
-	echo "good luck"
-  else
-  	echo "Best School"
-  fi
+  echo $i
+  case $i in
+	4)		  echo "bad luck from China"  ;;
+	9)		  echo "bad luck from Japan"  ;;
+	17)	  echo "bad luck from Italy"  ;;
+	esac
   i=$((i + 1))
 done
