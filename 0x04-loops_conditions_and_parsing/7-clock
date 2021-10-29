@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This scritp print the time for 12 hours and 59 minutes
+hours=0
+minutes=1
+while [ $hours -le 12 ]    # this is loop1
+do
+   echo "Hour: $hours"
+   while [ $minutes -le 59 ]  # this is loop2
+   do
+      echo $minutes
+      minutes=$((minutes + 1))
+   done
+   hours=$((hours + 1))
+   minutes=1
+done
