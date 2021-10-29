@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This scritp display the current PID of the script
+# sleep 20 &
+firefox &
+echo "$!"
