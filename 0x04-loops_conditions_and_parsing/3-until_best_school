@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This scritp print 'Best School' with until
+i=0
+until [ ! $i -lt 10 ]
+do
+  echo "Best School"
+  i=$((i + 1))
+done
