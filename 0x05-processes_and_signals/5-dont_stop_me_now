@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This scritp kill a process
+name=$(pgrep -f 4-to_infinity_and_beyond)
+kill $name
