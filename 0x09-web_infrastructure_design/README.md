@@ -11,15 +11,21 @@ This project is about web infrastructure design. It seeks to explain what happen
 
 ### 0. Simple web stack
 A server web infrastructure that hosts the website that is reachable via www.foobar.com. Start your explanation by having a user wanting to access your website.
+
 [Link to Miro](https://miro.com/welcomeonboard/YmdyZFJjRG8yZk51bURCcTJNbmcxcHNzTUF5NmFqTEZkc2hqW[…]V1dXMDNLa3wzMDc0NDU3MzYwMDYxNDk1Njc1?invite_link_id=234368062410)
+
 ![image](https://user-images.githubusercontent.com/85319550/144319865-8596837a-6360-49fc-bd17-9e1df94ed5fe.png)
 
-### 1. Distributed web infrastructure}
+### 1. Distributed web infrastructure
 A three server web infrastructure that hosts the website www.foobar.com.
+
 [Link to Miro](https://miro.com/welcomeonboard/TUpnRGo3MVJWQTZGQkd2WDhpam9iOVNaRTBPMTUwRjFOYnRHa[…]ODgwaEdENHwzMDc0NDU3MzYwMDYxNDk1Njc1?invite_link_id=643413469214)
+
 ![image](https://user-images.githubusercontent.com/85319550/144319700-19fc2f6e-e2ac-4373-b4ec-ba5f16778d17.png)
 
 ### 2. Secured and monitored web infrastructure
 A three server web infrastructure that hosts the website www.foobar.com, it must be secured, serve encrypted traffic, and be monitored.
+
 [Link to Miro](https://miro.com/welcomeonboard/WjBlcW9JSEw5a0JDcjJ0dkx1ckFZWUlHNWVHc25YZVN0OUgxd[…]dk5DdzVHQXwzMDc0NDU3MzYwMjYxMzQwNzU3?invite_link_id=140828343080)
+
 ![image](https://user-images.githubusercontent.com/85319550/144319923-eb7cc8f6-bf79-43e4-9ea7-368508a4dfea.png)
