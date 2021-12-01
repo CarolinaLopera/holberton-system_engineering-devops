@@ -35,9 +35,9 @@ A three server web infrastructure that hosts the website www.foobar.com.
 - 1 application files (code base)
 - 1 database (MySQL)
 
-[Link to Miro](https://miro.com/welcomeonboard/TUpnRGo3MVJWQTZGQkd2WDhpam9iOVNaRTBPMTUwRjFOYnRHa[…]ODgwaEdENHwzMDc0NDU3MzYwMDYxNDk1Njc1?invite_link_id=643413469214)
-
 ![image](https://user-images.githubusercontent.com/85319550/144319700-19fc2f6e-e2ac-4373-b4ec-ba5f16778d17.png)
+
+[Link to Miro](https://miro.com/welcomeonboard/TUpnRGo3MVJWQTZGQkd2WDhpam9iOVNaRTBPMTUwRjFOYnRHa[…]ODgwaEdENHwzMDc0NDU3MzYwMDYxNDk1Njc1?invite_link_id=643413469214)
 
 ### 2. Secured and monitored web infrastructure
 A three server web infrastructure that hosts the website www.foobar.com, it is secured, serve encrypted traffic, and monitored.
@@ -53,9 +53,27 @@ A three server web infrastructure that hosts the website www.foobar.com, it is s
 - 1 application files (code base)
 - 1 database (MySQL)
 
+![image](https://user-images.githubusercontent.com/85319550/144319923-eb7cc8f6-bf79-43e4-9ea7-368508a4dfea.png)
+
 [Link to Miro](https://miro.com/welcomeonboard/WjBlcW9JSEw5a0JDcjJ0dkx1ckFZWUlHNWVHc25YZVN0OUgxd[…]dk5DdzVHQXwzMDc0NDU3MzYwMjYxMzQwNzU3?invite_link_id=140828343080)
 
-![image](https://user-images.githubusercontent.com/85319550/144319923-eb7cc8f6-bf79-43e4-9ea7-368508a4dfea.png)
+### 3. Scale up
+A three server web infrastructure that hosts the website www.foobar.com, it is secured, serve encrypted traffic, and monitored.
+
+**This infrastructure uses:**
+- 3 server
+- 3 firewalls
+- 1 SSL certificate to serve www.foobar.com over HTTPS
+- 3 monitoring clients (data collector for Sumologic)
+- 1 web server (Nginx)
+- 1 application server
+- 2 load-balancer (HAproxy)
+- 1 application files (code base)
+- 1 database (MySQL)
+
+![image](https://user-images.githubusercontent.com/85319550/144327910-ed9cad0a-b791-4d08-a1dc-111d3a60415a.png)
+
+[Link to Miro](https://miro.com/welcomeonboard/Uk5HNzN6RUlnNlhDdGlKUU9vMnJSam54T0NRWWg3RU1NWmRCY3NaNnpiZ0NoNlB0M09iWmpuVks1OU9QSlRVM3wzMDc0NDU3MzYwMDYxNDk1Njc1?invite_link_id=837847826165)
 
 ## AUTHORS
 
