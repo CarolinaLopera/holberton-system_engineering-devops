@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Run apache and return page
+sudo service apache2 start
