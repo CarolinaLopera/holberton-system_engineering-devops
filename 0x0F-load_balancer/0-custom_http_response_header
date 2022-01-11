@@ -11,6 +11,7 @@ echo "Hello World" > /var/www/html/index.html
 echo "server {
        listen 80;
        listen [::]:80;
+       add_header X-Served-By $HOSTNAME;
        # server_name example.ubuntu.com;
        root /var/www/html;
        index index.html;
