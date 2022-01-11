@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Install nginx web server
+
+apt-get update
+apt-get install -y nginx
+
+# mkdir /var/www/html
+touch /var/www/html/index.html
+echo "Hello World" > /var/www/html/index.html
+
+echo "server {
+       listen 80;
+       listen [::]:80;
+       # server_name example.ubuntu.com;
+       root /var/www/html;
+       index index.html;
+    #    location / {
+    #            try_files $uri $uri/ =404;
+    #    }
+}" > /etc/nginx/sites-enabled
+
+service nginx restart
