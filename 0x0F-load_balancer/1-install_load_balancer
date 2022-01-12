@@ -1,31 +1,10 @@
 #!/usr/bin/env bash
 # Install and configurate load balancer
 
-# apt-get install -y software-properties-common
-# add-apt-repository -y ppa:vbernat/haproxy-1.8
 apt-get update
 apt-get install -y haproxy
 
-# mv /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg_cp
-# touch /etc/haproxy/haproxy.cfg
-
-echo "global
-   log 127.0.0.1 local0 notice
-   maxconn 2000
-   user haproxy
-   group haproxy
-   daemon
-
-defaults
-    log global
-    mode http
-    option httplog
-    option dontlognull
-    timeout connect 5000
-    timeout client 50000
-    timeout server 50000
-
-#frontend
+echo "#frontend
 #---------------------------------
 frontend http_front
     bind *:80
@@ -43,6 +22,6 @@ backend http_back
 listen stats
     bind *:80
     stats enable
-    stats uri /haproxy?stats" > /etc/haproxy/haproxy.cfg
+    stats uri /haproxy?stats" >> /etc/haproxy/haproxy.cfg
 
-service start haproxy
+service haproxy restart
