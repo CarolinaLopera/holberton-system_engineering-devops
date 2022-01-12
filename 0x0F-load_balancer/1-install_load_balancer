@@ -1,41 +1,48 @@
 #!/usr/bin/env bash
 # Install and configurate load balancer
 
-apt-get update -y
+# apt-get install -y software-properties-common
+# add-apt-repository -y ppa:vbernat/haproxy-1.8
+apt-get update
 apt-get install -y haproxy
 
+# mv /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg_cp
+# touch /etc/haproxy/haproxy.cfg
+
 echo "global
-   log /dev/log local0
-   log /dev/log local1 notice
-   chroot /var/lib/haproxy
-   stats timeout 30s
+   log 127.0.0.1 local0 notice
+   maxconn 2000
    user haproxy
    group haproxy
    daemon
+
 defaults
-log global
-mode http
-option httplog
-option dontlognull
-timeout connect 5000
-timeout client 50000
-timeout server 50000
+    log global
+    mode http
+    option httplog
+    option dontlognull
+    timeout connect 5000
+    timeout client 50000
+    timeout server 50000
 
 #frontend
 #---------------------------------
 frontend http_front
-bind *:80
-stats uri /haproxy?stats
-default_backend http_back
+    bind *:80
+    mode http
+    default_backend http_back
 
 #round robin balancing backend http
 #-----------------------------------
 backend http_back
-balance roundrobin
-#balance leastconn
-mode http
-server webserver1 34.73.125.21 check    # ip_address_of_1st_centos_webserver
-server webserver2 54.89.232.52 check    # ip_address_of_2nd_centos_webserver" > /etc/haproxy/haproxy.cfg
+    balance roundrobin
+    option forwardfor
+    server 3373-web-01 34.73.125.21:80 check    # ip_address_of_1st_webserver
+    server 3373-web-02 54.89.232.52:80 check    # ip_address_of_2nd_webserver
 
-systemctl enable haproxy
-systemctl start haproxy
+listen stats
+    bind *:80
+    stats enable
+    stats uri /haproxy?stats" > /etc/haproxy/haproxy.cfg
+
+service start haproxy
