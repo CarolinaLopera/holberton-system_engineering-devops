@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # Script to configurate Nginx to listen port 80
 
-# cat /etc/nginx/sites-available/default | echo > /etc/nginx/sites-enabled/default
 content=$(cat /etc/nginx/sites-available/default)
 echo "$content" > /etc/nginx/sites-enabled/default
